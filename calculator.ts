@@ -17,6 +17,10 @@ function divide(a: number, b: number): number | string {
     return a / b;
 }
 
+function modulo(a: number, b: number) {
+	return a % b;
+}
+
 const rl = readline.createInterface({
     input: process.stdin,
     output: process.stdout
@@ -31,6 +35,7 @@ rl.question('Enter first number: ', (input1) => {
         console.log("Subtract:", subtract(num1, num2));
         console.log("Multiply:", multiply(num1, num2));
         console.log("Divide:", divide(num1, num2));
+	console.log("Modulo: ", modulo(num1, num2));
 
         rl.close();
     });
